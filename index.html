@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>LUIS MÁRMOL RESTAURANT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+
+
+<style>
+body {
+  background-color: #dbdbc6;
+  margin: 0 10%;
+  font-family: sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 11px solid #57b1dc;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #d1633c;
+  font-size: 1em;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+		td, th {
+		border: 5px solid gray;
+		text-align: center;
+  		font-family: serif;
+  		font-weight: normal;
+  		text-transform: none; 
+		  color: #d1633c;
+		}
+		
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Luis Mármol RESTAURANT</h1>
+<p>Not is our food good, it's also good-looking! Our patrons often stop 
+to admire our fare with a quick Instagram before digging in. We've 
+collected a few of our favorite shots here.</p>
+
+<canvas width="600" height="400" id="my_first_canvas">
+	Your browser does not support HTML5 canvas. Try using Chrome, Firefox,
+	Safari or MS Edge.
+
+
+	<script type="text/javascript">
+		window.addEventListener('load', eventWindowLoaded, false);
+		function eventWindowLoaded() {
+		canvasApp();
+		}
+		function canvasApp(){
+		var theCanvas = document.getElementById('my_first_canvas');
+		var my_canvas = theCanvas.getContext('2d');
+		my_canvas.strokeRect(0,0,200,225)
+		// to start, draw a border around the canvas
+		//draw face
+my_canvas.beginPath();
+my_canvas.arc(100, 100, 75, (Math.PI/180)*0, (Math.PI/180)*360, false);
+// circle dimensions
+my_canvas.strokeStyle = "black"; // circle outline is black
+my_canvas.lineWidth = 3; // outline is three pixels wide
+my_canvas.fillStyle = "yellow"; // fill circle with yellow
+my_canvas.stroke(); // draw circle
+my_canvas.fill(); // fill in circle
+my_canvas.closePath();
+// now, draw left eye
+my_canvas.fillStyle = "black"; // switch to black for the fill
+my_canvas.beginPath();
+my_canvas.arc(65, 70, 10, (Math.PI/180)*0, (Math.PI/180)*360, false);
+// circle dimensions
+my_canvas.stroke(); // draw circle
+my_canvas.fill(); // fill in circle
+my_canvas.closePath();
+// now, draw right eye
+my_canvas.beginPath();
+my_canvas.arc(135, 70, 10, (Math.PI/220)*0, (Math.PI/180)*360, false);
+// circle dimensions
+my_canvas.stroke(); // draw circle
+my_canvas.fill(); // fill in circle
+my_canvas.closePath();
+// draw smile
+my_canvas.lineWidth = 6; // switch to six pixels wide for outline
+my_canvas.beginPath();
+my_canvas.arc(99, 120, 35, (Math.PI/180)*0, (Math.PI/180)*-190, false);
+// semicircle dimensions
+my_canvas.stroke();
+my_canvas.closePath();
+// Smiley Speaks!
+my_canvas.fillStyle = "black"; // switch to black for text fill
+my_canvas.font
+= '20px _sans'; // use 20 pixel sans serif font
+my_canvas.fillText ("Hello Canvas!", 45, 200); // write text
+}
+</script>
+</canvas>
+
+<canvas width="600" height="400" id="canvas">
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'green';
+ctx.fillRect(10, 10, 150, 100);
+</script>
+
+	</canvas>
+
+<h2>Our Baked Goods</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gTpjNtAs31Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p>
+  <picture>
+  <source media="(min-width: 480px)" srcset="LUIS%20M%C3%81RMOL%20RESTAURANT_files/bread-1200.jpg 1200w, LUIS%20M%C3%81RMOL%20RESTAURANT_files/bread-800.jpg 800w" sizes="80vw">
+  <img src="LUIS%20M%C3%81RMOL%20RESTAURANT_files/bread-400.jpg" alt="close-up of sliced rustic
+  bread">
+  </picture>
+  <br>
+</p><p>We start our day at the crack of dawn to bake our own muffins, 
+bread, and dinner rolls. Loaves not used that day are donated to the 
+local food shelter. </p>
+
+<h2>Our Burgers</h2>
+
+
+  <picture>
+
+  <source media="(min-width: 480px)" srcset="LUIS%20M%C3%81RMOL%20RESTAURANT_files/burgers-1200.jpg 1200w, LUIS%20M%C3%81RMOL%20RESTAURANT_files/burgers-800.jpg 800w" sizes="80vw">
+
+  <img src="LUIS%20M%C3%81RMOL%20RESTAURANT_files/burgers-400.jpg" alt="close-up of sliced rustic
+  bread">
+  </picture>
+  <br>
+
+
+
+<p>People come from all over to enjoy our lovingly made burgers. We 
+grind our own locally-sourced organic beef and turkey so you know it's 
+fresh and free from fillers and other nonsense. Go for one of our 
+creative topping combos or stick with the classics. </p>
+
+<h2>Catch of the Day</h2>
+
+<picture>
+
+  <source media="(min-width: 480px)" srcset="LUIS%20M%C3%81RMOL%20RESTAURANT_files/fish-1200.jpg 1200w, LUIS%20M%C3%81RMOL%20RESTAURANT_files/fish-800.jpg 800w" sizes="80vw">
+
+  <img src="LUIS%20M%C3%81RMOL%20RESTAURANT_files/fish-400.jpg" alt="close-up of sliced rustic
+  bread">
+  </picture>
+  <br>
+
+<p>Our chef works with local fisherman to pick the freshest the sea has 
+to offer for our daily seafood special. Our Roast Cod Caponata with 
+Roasted Potatoes is an old favorite with our regulars.</p>
+
+
+<table>
+	<tr>
+	<th>Burgers</th>
+	<td>Organic Grass-fed Beef</td>
+	<td>Black Bean Veggie</td>
+	</tr>
+	<tr>
+	<th>Fries</th>
+	<td>Hand-cut Idaho potato</td>
+	<td>Seasoned sweet potato</td>
+	</tr>
+	</table>
+
+	<table>
+		<tr>
+		  <th>Album</th>
+		  <th>Year</th>
+		</tr>
+		<tr>
+		  <td>Rubber Soul</td>
+		  <td>1965</td>
+		</tr>
+		<tr>
+		  <td>Revolver</td>
+		  <td>1966</td>
+		</tr>
+		<tr>
+		  <td>Sgt. Pepper's</td>
+		  <td>1967</td>
+		</tr>
+		<tr>
+		  <td>The White Album</td>
+		  <td>1968</td>
+		</tr>
+		<tr>
+		  <td>Abbey Road</td>
+		  <td>1969</td>
+		<tr>
+		</table>
+		
+		<head>
+			<meta charset="utf-8" >
+			 <title>Blackstone Bistro: Pizza-on-Demand</title>
+			 <style type="text/css">
+				ol, ul { 
+			   list-style-type: none;
+				}
+			 </style>
+		  </head>
+		  
+		  <body>
+		  
+		  <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+		  
+		  <p>Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+		  
+		  
+		  <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+		  
+		  <fieldset>
+			<legend>Your Information</legend>
+			<ul>
+			  <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+			  <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+			  <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+			  <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+			  <li>Delivery instructions:<br>
+			  <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+			</ul>
+		  </fieldset>
+		  
+		  <h2>Design your dream pizza:</h2>
+		  
+		  <fieldset>
+			<legend>Pizza specs</legend>
+			<fieldset>
+			  <legend>Crust <em>(Choose one)</em>:</legend>
+			  <ul>
+				<li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+				<li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+				<li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
+				<li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+			  </ul>
+			</fieldset>
+		  
+			<fieldset>
+			<legend>Toppings <em>(Choose as many as you want)</em></legend>
+			  <ul>
+				<li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+				<li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+			  </ul>
+			</fieldset>
+		  
+			<fieldset>
+			<legend>Number</legend>
+			<p>How many pizzas: 
+			<select name="pizzas" size="1">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			</select>
+			</p>
+			</fieldset>
+
+			<fieldset><p>How old are you?</p>
+				<ol>
+				<li><input type="radio"name="age" value="under24" checked> under
+				24</li>
+				<li><input type="radio"name="age" value="25-34"> 25 to 34</li>
+				<li><input type="radio"name="age" value="35-44"> 35 to 44</li>
+				<li><input type="radio"name="age" value="over45"> 45+</li>
+				</ol>
+				
+				
+			</fieldset>
+
+			
+
+			<p>What is your favorite 80s band?
+				<select name="EightiesFave">
+				<option>The Cure</option>
+				<option>Cocteau Twins</option>
+				<option>Tears for Fears</option>
+				<option>Thompson Twins</option>
+				<option value="EBTG">Everything But the Girl</option>
+				<option>Depeche Mode</option>
+				<option>The Smiths</option>
+				<option>New Order</option>
+				</select>
+				</p>
+
+				<p>What 80s bands did you listen to?
+					<select name="EightiesBands" size="6" multiple>
+					<option>The Cure</option>
+					<option>Cocteau Twins</option>
+					<option selected>Tears for Fears</option>
+					<option selected>Thompson Twins</option>
+					<option value="EBTG">Everything But the Girl</option>
+					<option>Depeche Mode</option>
+					<option>The Smiths</option>
+					<option>New Order</option>
+					</select>
+					</p>
+
+					<select name="icecream" size="7" multiple>
+						<optgroup label="traditional">
+						<option>vanilla</option>
+						<option>chocolate</option>
+						</optgroup>
+						<optgroup label="fancy">
+						<option>Super praline</option>
+						<option>Nut surprise</option>
+						<option>Candy corn</option>
+						</optgroup>
+						</select>
+
+						<form action="/client.php" method="POST" enctype="multipart/form-data">
+							<label>Send a photo to be used as your online icon <em>(optional)
+							</em><br>
+							<input type="file" name="photo"></label>
+							</form>
+				
+		  
+		  </fieldset> <!-- closes 'Pizza Specs' fieldset -->
+		  
+		  <p><input type="submit" value="Bring me a pizza!">
+		  <input type="reset"></p>
+		  
+		  </form>
+		  
+		  <p>What is your favorite 80s band?
+			<select name="EightiesFave">
+			<option>The Cure</option>
+			<option>Cocteau Twins</option>
+			<option>Tears for Fears</option>
+			<option>Thompson Twins</option>
+			<option value="EBTG">Everything But the Girl</option>
+			<option>Depeche Mode</option>
+			<option>The Smiths</option>
+			<option>New Order</option>
+			</select>
+			</p>
+
+		  <p>What is your favorite 80s band?
+			<select name="EightiesFave">
+			<option>The Cure</option>
+			<option>Cocteau xxxxx Twins</option>
+			<option>Tears for Fears</option>
+			<option>Thompson Twins</option>
+			<option value="EBTG">Everything But the Girl</option>
+			<option>Depeche Mode</option>
+			<option>The Smiths</option>
+			<option>New Order</option>
+			</select>
+			</p>
+			<select name="icecream" size="10" multiple>
+				<optgroup label="traditional">
+				<option>vanilla</option>
+				<option>chocolate</option>
+				</optgroup>
+				<optgroup label="fancy">
+				<option>Super praline</option>
+				<option>Nut surprise</option>
+				<option>Candy corn</option>
+				</optgroup>
+				</select>
+
+				<form action="/client.php" method="POST" enctype="multipart/form-data">
+					<label>Send a photo to be used as your online icon <em>(optional)
+					</em><br>
+					<input type="file" name="photo"></label>
+					</form>
+
+					<label>Number of guests <input type="number" name="guests" min="1"
+						max="6"></label>
+						<label>Satisfaction (0 to 10) <input type="range" name="satisfaction"
+						min="0" max="10" step="1"></label>
+
+						
+
+
+		<h1>Exercise 8-2</h1>
+		<table>
+		  <tr>
+			<th>7:00pm</th><th>7:30pm</th><th>8:00pm</th>
+		  </tr>
+		  <tr>
+			<td colspan="3">The Sunday Night Movie</td>
+		  </tr>
+		  <tr>
+			<td>Perry Mason</td>
+			<td>Candid Camera</td>
+			<td>What's My Line</td>
+		  </tr>
+		  <tr>
+			<td>Bonanza</td>
+			<td colspan="2">The Wackiest Ship in the Army</td>
+		  </tr>
+		</table>
+		
+		
+		<h1>Exercise 8-3</h1>
+		
+		<table>
+		  <tr>
+			<td>apples</td>
+			<td rowspan="3">oranges</td>
+			<td>pears</td>
+		  </tr>
+		  <tr>
+			<td>bananas</td>
+			<td rowspan="2">pineapple</td>
+		  </tr>
+		  <tr>
+			<td>lychees</td>
+		  </tr>
+		</table>
+		
+		<h1>Exercise 8-4</h1>
+		<table>
+		   <caption>Your Content Here</caption>
+		   <colgroup>colgroup</colgroup>
+		   <colgroup span="3"></colgroup>
+		  <thead>
+		  <tr>
+			<th rowspan="2">&nbsp;</th>
+			<th colspan="2">A common header for two subheads</th>
+			<th rowspan="2">Header 3</th>
+		  </tr>
+		  <tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+		  </tr>
+		  </thead>
+		  <tbody>
+		  <tr>
+			<th scope="row">Thing A</th>
+			<td>data A1</td>
+			<td>data A2</td>
+			<td>data A3</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Thing B </th>
+			<td>data B1</td>
+			<td>data B2</td>
+			<td>data B3</td>
+		  </tr>
+		  <tr>
+			<th scope="row">Thing C</th>
+			<td>data C1</td>
+			<td>data C2</td>
+			<td>data C3</td>
+		  </tr>
+		  </tbody>
+		</table>
+<br> <h1></h1>
+		<table>
+			<tr>
+			<th>Burgers</th>
+			<td>Organic Grass-fed Beef</td>
+			<td>Black Bean Veggie</td>
+			</tr>
+			<tr>
+			<th>Fries</th>
+			<td>Hand-cut Idaho potato</td>
+			<td>Seasoned sweet potato</td>
+			</tr>
+			</table>
+			<br> <h1></h1>
+
+			<table>
+				
+				<tr>
+				<td>Large (24oz.)</td>
+				<th rowspan="3">Serving Size</th>
+				<td>Small (8oz.)</td>
+				</tr>
+				<tr>
+				<td>Medium (16oz.)</td>
+				</tr>
+				<tr>
+				<td>Large (24oz.)</td>
+				</tr>
+				</table>
+
+				<br> <h1></h1>
+
+				<table>
+					<caption>Nutritional Information</caption>
+					<tr>
+					<th>Menu item</th>
+					<th>Calories</th>
+					<th>Fat (g)</th>
+					</tr>
+					<!-- table continues -->
+					</table>
+					<br> <h1></h1><br> <h1></h1><br> <h1></h1>
+					<p>In the following table, characteristics are given in the second
+						column, with the negative side in the left column and the positive
+						side in the right column.</p>
+						<table>
+						 <caption>Characteristics with positive and negative sides</caption>
+						 <thead>
+						  <tr>
+						   <th id="n"> Negative
+						   <th> Characteristic
+						   <th> Positive
+						 <tbody>
+						  <tr>
+						   <td headers="n r1"> Sad
+						   <th id="r1"> Mood
+						   <td> Happy
+						  <tr>
+						   <td headers="n r2"> Failing
+						   <th id="r2"> Grade
+						   <td> Passing
+						</table>
+						<br> <h1></h1>
+						<table>
+						<tr>
+							<th scope="row">Mars</th>
+							<td>.95</td>
+							<td>.62</td>
+							<td>0</td>
+							</tr>
+</table>
+
+<br> <h1></h1>
+
+<head>
+	<title>Table Challenge</title>
+	<style>
+	td, th { border: 1px solid #CCC; }
+	table { border: 1px solid rgb(175, 29, 29); }
+	</style>
+	</head>
+	<body>
+
+
+
+
+		<table>
+			<caption>Table example</caption>
+		<tr>
+			<th rowspan="2"></th>
+			<th colspan="2">A common header for two	subheads</th>
+			<th scope="col" rowspan="2">Header 3
+		</tr>
+
+		<tr>
+			<th scope="col" >Header 1</th> 
+			<td scope="col">Header 2</td>
+
+		</tr></th>
+		<tr>
+		
+		<td>Thing A</td>
+		<td>data A1</td>
+		<td>data A2</td>
+		<td>data A3</td>
+
+		
+		</tr>
+
+		<tr>
+			<td>Thing B</td>
+			<td>data B1</td>
+			<td>data B2</td>
+			<td>data B3</td>
+
+		</tr>
+
+		<tr>
+			<td>Thing C</td>
+			<td>data C1</td>
+			<td>data C2</td>
+			<td>data C3</td>
+
+		</tr>
+
+		</table>
+		</body>
+
+		<br> <br> <br> <br> <br> 
+
+
+
+
+
+		<h1>Exercise 8-4</h1>
+<table>
+   <caption>Your Content Here</caption>
+   <colgroup></colgroup>
+   <colgroup span="3"></colgroup>
+  <thead>
+  <tr>
+    <th rowspan="2">&nbsp;</th>
+    <th colspan="2">A common header for two subheads</th>
+    <th rowspan="2">Header 3</th>
+  </tr>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row">Thing A</th>
+    <td>data A1</td>
+    <td>data A2</td>
+    <td>data A3</td>
+  </tr>
+  <tr>
+    <th scope="row">Thing B </th>
+    <td>data B1</td>
+    <td>data B2</td>
+    <td>data B3</td>
+  </tr>
+  <tr>
+    <th scope="row">Thing C</th>
+    <td>data C1</td>
+    <td>data C2</td>
+    <td>data C3</td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+
+
+
+<br> <br> <br> <br> <br> 
+
+<head>
+	<title>Mailing List Signup</title>
+	<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h1>Mailing List Signup</h1>
+
+	<form action="/mailinglist.php" method="POST">
+		<fieldset>
+		<legend>Join our email list</legend>
+		<p>Get news about the band such as tour dates and special MP3
+		releases sent to your own in-box.
+	
+		Official contest entry:<br>
+			<em>Tell us why you love the band. Five winners will get backstage
+			passes!</em><br>
+			<textarea name="contest_entry" placeholder="50 words or less" rows="5"
+			cols="50"></textarea>
+			<br> <br> <br> <br> <br> 
+
+			Education completed: <input type="text" list="edulevel"
+				name="education">
+				<datalist id="edulevel">
+				<option value="High School">
+				<option value="Bachelors Degree">
+				<option value="Masters Degree">
+				<option value="PhD">
+				</datalist>
+			</p>
+		<ol>
+		<li><label for="firstlast">Name:</label>
+		<input type="text" name="fullname" id="firstlast"></li>
+		<li><label for="email">Email:</label>
+		<input type="text" name="email" id="email"></li>
+		<li><label>Favorite color: <input type="text" name="favcolor"
+			value="Red" maxlength="50"></label></li>
+
+			<li><label for="form-pswd">Password:</label><br>
+				<input type="password" name="pswd" maxlength="12" id="form-pswd"></li>
+		</ol>
+		<ol>
+			<li><label for="firstlast">Name:</label>
+			<input type="text" name="fullname" id="firstlast"></li>
+			<li><label for="email">Email:</label>
+			<input type="text" name="email" id="email"></li>
+			</ol>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Start over">
+			</fieldset>
+			</form>
+			</body>
+			<p><label>Official contest entry: <br>
+				<em>Tell us why you love the band. Five winners will get backstage
+				passes!</em><br>
+				<textarea name="contest_entry" rows="5" cols="50">The band is totally
+				awesome!</textarea></label></p>
+		<input type="submit" value="Submit">
+		</fieldset>
+		</form>
+		</body>
+		
+
+		<br> <br> <br> <br> <br> 
+
+		<head>
+			<title>Mailing List Signup 2</title>
+			<meta charset="utf-8">
+			</head>
+		<body>
+			<h1>Mailing List Signup</h1>
+			<form action="/mailinglist.php" method="POST">
+				<fieldset>
+				<legend>Join our email list</legend>
+				<p>Get news about the band such as tour dates and special MP3
+				releases sent to your own in-box.
+				Official contest entry:<br>
+					<em>Tell us why you love the band. Five winners will get backstage
+					passes!</em><br>
+					<textarea name="contest_entry" placeholder="50 words or less" rows="5"
+					cols="50"></textarea>
+					</p>
+				<ol>
+				<li><label for="firstlast">Name:</label>
+				<input type="text" name="fullname" id="firstlast"></li>
+				<li><label for="email">Email:</label>
+				<input type="text" name="email" id="email"></li>
+				</ol>
+				<input type="submit" value="Submit">
+				</fieldset>
+				</form>
+				</body>
+				<p><label>Official contest entry: <br>
+					<em>Tell us why you love the band. Five winners will get backstage
+					passes!</em><br>
+					<textarea name="contest_entry" rows="5" cols="50">The band is totally
+					awesome!</textarea></label></p>
+			
+					<br> <br> <br> <br> <br> 
+
+
+
+				<head>
+					<meta charset="utf-8" >
+					 <title>Blackstone Bistro: Pizza-on-Demand</title>
+					 <style type="text/css">
+						ol, ul { 
+					   list-style-type: none;
+						}
+					 </style>
+				  </head>
+				  
+				  <body>
+				  
+				  <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+				  
+				  <p>Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+				  
+				  
+				  <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+				  
+				  <fieldset>
+					<legend>Your Information</legend>
+					<ul>
+					  <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+					  <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+					  <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+					  <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+					  <li>Delivery instructions:<br>
+					  <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+					</ul>
+				  </fieldset>
+				  
+				  <h2>Design your dream pizza:</h2>
+				  
+				  <fieldset>
+					<legend>Pizza specs</legend>
+					<fieldset>
+					  <legend>Crust <em>(Choose one)</em>:</legend>
+					  <ul>
+						<li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+						<li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+						<li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
+						<li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+					  </ul>
+					</fieldset>
+				  
+					<fieldset>
+					<legend>Toppings <em>(Choose as many as you want)</em></legend>
+					  <ul>
+						<li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+						<li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+					  </ul>
+					</fieldset>
+				  
+					<fieldset>
+					<legend>Number</legend>
+					<p>How many pizzas: 
+					<select name="pizzas" size="1">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					  <option>6</option>
+					</select>
+					</p>
+					</fieldset>
+				  
+				  </fieldset> <!-- closes 'Pizza Specs' fieldset -->
+				  
+				  <p><input type="submit" value="Bring me a pizza!">
+				  <input type="reset"></p>
+				  
+				  </form>
+
+				  <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+<p>Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+
+<fieldset>
+  <legend>Your Information</legend>
+  <ul>
+    <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+    <li>Delivery instructions:<br>
+    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long"></textarea></li>
+  </ul>
+</fieldset>
+
+<h2>Design your dream pizza:</h2>
+
+<fieldset>
+  <legend>Pizza specs</legend>
+  <fieldset>
+    <legend>Crust <em>(Choose one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
+      <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+      <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
+      <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Toppings <em>(Choose as many as you want)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many pizzas: 
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+  </p>
+  </fieldset>
+
+</fieldset> <!-- closes 'Pizza Specs' fieldset -->
+
+<p><input type="submit" value="Bring me a pizza!">
+<input type="reset"></p>
+
+</form>
+
+<p>What is your favorite 80s band?
+	<select name="EightiesFave">
+	<option>The xxxx Cure</option>
+	<option>Cocteau Twins</option>
+	<option>Tears for Fears</option>
+	<option>Thompson Twins</option>
+	<option value="EBTG">Everything But the Girl</option>
+	<option>Depeche Mode</option>
+	<option>The Smiths</option>
+	<option>New Order</option>
+	</select>
+	</p>
+
+</body>
+				  
+			
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
